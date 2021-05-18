@@ -1,15 +1,63 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <title>JQuery tutorial</title>
+    <title>SemanticUI Tutorial</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="semantic/dist/semantic.min.js"></script>
   </head>
 
   <body>
-    <div id="content"></div>
+    <div class="ui grid">
+      <div class="four wide column">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, incidunt
+        ipsa vitae rem animi, aliquid aliquam quasi molestias a illo magnam,
+        natus est dolorem consequuntur! Accusamus pariatur quo beatae molestiae!
+      </div>
+      <div class="four wide column">
+        <div class="ui labeled input">
+          <div class="ui label">Display:</div>
+          <input type="text" placeholder="text" id="input-text" />
+        </div>
+        <div class="ui animated fade button" tabindex="0" id="submit-button">
+          <div class="visible content">Display Text</div>
+          <div class="hidden content">Go!</div>
+        </div>
+      </div>
+      <div class="four wide column">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, tempore,
+        quisquam similique aliquid possimus a fuga repellendus, ducimus culpa
+        obcaecati distinctio! Error suscipit nulla tempore quidem ad numquam
+        dignissimos quo!
+      </div>
+      <div class="four wide column" id="output-text">
+      </div>
+      <div class="four wide column"></div>
+      <div class="four wide column">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id nisi
+        officiis consequatur alias quam quisquam voluptates fuga, laborum omnis
+        quia eos, quidem ab quibusdam? Sint ea unde quia. Veniam!
+      </div>
+      <div class="four wide column"></div>
+      <div class="four wide column">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+        expedita, sint, perspiciatis soluta veniam architecto doloribus
+        obcaecati ex maiores dignissimos, magni cum voluptate consequuntur a?
+        Perspiciatis incidunt porro provident repudiandae.
+      </div>
+    </div>
     <script src="bundle.js"></script>
   </body>
-
 </html>

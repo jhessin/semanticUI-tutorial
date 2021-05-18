@@ -1,13 +1,13 @@
 /** @format */
+import $ from 'jquery';
 
-import _ from 'lodash';
+function pressButton() {
+  const input = $('#input-text').val() as string;
+  const output = $('#output-text');
 
-function component() {
-  const element = document.createElement('div');
-
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
+  output.text(input);
 }
 
-document.body.appendChild(component());
+const button = $('#submit-button');
+
+button.on('click', pressButton);
