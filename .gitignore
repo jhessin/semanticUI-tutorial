@@ -1,34 +1,5 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/yarn,node,npm,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=yarn,node,npm,macos
-
-### macOS ###
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Created by https://www.toptal.com/developers/gitignore/api/node,yarn
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn
 
 ### Node ###
 # Logs
@@ -73,6 +44,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+semantic/
 
 # TypeScript v1 declaration files
 typings/
@@ -156,8 +128,6 @@ dist/
 tmp/
 temp/
 
-#!! ERROR: npm is undefined. Use list command to see defined gitignore types !!#
-
 ### yarn ###
 # https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
 
@@ -169,9 +139,9 @@ temp/
 
 # if you are NOT using Zero-installs, then:
 # comment the following lines
-# !.yarn/cache
+#!.yarn/cache
 
 # and uncomment the following lines
-.pnp.*
+ .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/yarn,node,npm,macos
+# End of https://www.toptal.com/developers/gitignore/api/node,yarn
