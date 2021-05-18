@@ -5,7 +5,9 @@ function pressButton() {
   const input = $('#input-text').val() as string;
   const output = $('#output-text');
 
-  output.text(input);
+  output.html(`
+    <h1>${input}</h1>
+  `);
 }
 
 const button = $('#submit-button');
