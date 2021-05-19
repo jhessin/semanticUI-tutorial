@@ -12,11 +12,6 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/typescript@4.2.4/lib/typescript.js"
-      integrity="sha256-7V+NHJPWJcmhotKCpuDTiZrKKsWOUIgoQCoCA9M1k1s="
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
@@ -53,29 +48,6 @@
         </form>
       </div>
     </div>
-    <script>
-      $('.ui.form').form({
-        fields: {
-          email: {
-            identifier: 'email',
-            rules: [
-              {
-                type: 'email',
-                prompt: 'Please enter a valid email',
-              },
-            ],
-          },
-          password: {
-            identifier: 'password',
-            rules: [
-              {
-                type: 'empty',
-                prompt: 'Please enter a password',
-              },
-            ],
-          },
-        },
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

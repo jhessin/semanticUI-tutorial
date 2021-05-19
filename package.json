@@ -7,27 +7,16 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "webpack",
     "start": "live-server"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.5",
-    "@types/lodash": "^4",
-    "@types/node": "^14.0.13",
-    "@types/prettier": "^2",
-    "@types/semantic-ui": "^2.2.7",
-    "@types/webpack-dev-server": "^3",
     "@yarnpkg/pnpify": "^2.0.0-rc.25",
     "prettier": "^2.3.0",
-    "ts-loader": "^9.1.2",
-    "tslib": "^2.0.0",
-    "typescript": "^4.2.4",
     "webpack": "^5.37.0",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "jquery": "^3.6.0",
     "live-server": "^1.2.1"
   }
 }
