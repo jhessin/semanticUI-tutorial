@@ -1,0 +1,175 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin Page</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+      integrity="sha256-UXesixbeLkB/UYxVTzuj/gg3+LMzgwAmg3zD+C4ZASQ="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"
+      integrity="sha256-CgSoWC9w5wNmI1aN8dIMK+6DPelUEtvDr+Bc2m/0Nx8="
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 class="ui header" id="top-header">
+      <i class="eye icon"></i>
+      Welcome to the Admin Page
+    </h1>
+
+    <div class="ui three column grid" id="main-grid">
+      <div class="column">
+        <h2 class="ui header">Orders</h2>
+        <br />
+
+        <div class="ui fluid vertical menu">
+          <a class="active blue item">
+            Orders
+            <div class="ui blue left pointing label">25</div>
+          </a>
+          <a class="item">
+            Messages
+            <div class="ui label">10</div>
+          </a>
+          <a class="item">
+            Memos
+            <div class="ui label">7</div>
+          </a>
+          <div class="item">
+            <div class="ui transparent icon input">
+              <input type="text" placeholder="Search mail..." />
+              <i class="search icon"></i>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="ui top attached tabular menu">
+          <a class="item active">Received</a>
+          <a class="item">Processed</a>
+        </div>
+        <div class="ui bottom attached segment">
+          <div class="ui relaxed divided list">
+            <div class="item">
+              <i class="large mail middle aligned icon"></i>
+              <div class="content">
+                <a class="header">Order 1</a>
+                <div class="description">10 mins ago</div>
+              </div>
+            </div>
+            <div class="item">
+              <i class="large mail middle aligned icon"></i>
+              <div class="content">
+                <a class="header">Order 2</a>
+                <div class="description">22 mins ago</div>
+              </div>
+            </div>
+            <div class="item">
+              <i class="large mail middle aligned icon"></i>
+              <div class="content">
+                <a class="header">Order 4</a>
+                <div class="description">34 mins ago</div>
+              </div>
+            </div>
+            <div class="item">
+              <i class="large mail middle aligned icon"></i>
+              <div class="content">
+                <a class="header">Order 5</a>
+                <div class="description">34 mins ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="ui header">Customers</h2>
+        <br />
+        <div class="ui card">
+          <div class="ui fluid image">
+            <img class="ui image" src="images/Crystal.jpeg" />
+            <div class="ui blue ribbon label">Top Customer!</div>
+          </div>
+          <div class="content">
+            <a class="header">Crystal</a>
+            <div class="meta">
+              <span class="date">Joined in 2006</span>
+            </div>
+            <div class="description"></div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="paper plane icon"></i>
+              22 Orders
+            </a>
+          </div>
+        </div>
+        <br />
+        <div class="ui feed" id="customer-feed">
+          <div class="event">
+            <div class="label">
+              <img class="ui avatar image" src="images/Crystal.jpeg" />
+            </div>
+            <div class="content">You created the group <a>Coworkers</a></div>
+          </div>
+          <div class="event">
+            <div class="label">
+              <img class="ui avatar image" src="images/Crystal.jpeg" />
+            </div>
+            <div class="content">
+              You started the poll <a>Employee Satisfaction</a>
+            </div>
+          </div>
+          <div class="event">
+            <div class="label">
+              <img class="ui avatar image" src="images/Crystal.jpeg" />
+            </div>
+            <div class="content">
+              <a>Zenva</a> mentioned you in a <a>Comment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="ui header">Items</h2>
+        <br />
+        <div class="ui selection fluid dropdown">
+          <input type="hidden" name="category" />
+          <i class="dropdown icon"></i>
+          <div class="default text">Category</div>
+          <div class="menu">
+            <div class="item" data-value="0">All</div>
+            <div class="item" data-value="1">Toys</div>
+            <div class="item" data-value="2">Electronics</div>
+            <div class="item" data-value="3">Business</div>
+            <div class="item" data-value="4">Furniture</div>
+            <div class="item" data-value="5">Clothes</div>
+          </div>
+        </div>
+        <br />
+        <div>
+          <div class="ui segment">Item 1</div>
+          <div class="ui segment">Item 2</div>
+          <div class="ui segment">Item 3</div>
+          <div class="ui segment">Item 4</div>
+          <div class="ui segment">Item 5</div>
+          <div class="ui segment">Item 6</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

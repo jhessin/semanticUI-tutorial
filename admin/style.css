@@ -1,0 +1,19 @@
+/** @format */
+
+#top-header {
+  height: 10%;
+  padding: 20px;
+}
+
+#main-grid {
+  padding: 20px;
+}
+
+#main-grid > .column {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#customer-feed > * {
+  margin-bottom: 10px;
+}
