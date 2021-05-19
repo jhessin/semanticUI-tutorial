@@ -10,11 +10,15 @@ $.fn.form.settings.rules.isUserValid = function() {
   const password = $('.ui.form').form('get value', 'password');
 
   for (const [key, value] of Object.entries(auth)) {
-    console.log(`${key} - ${value}`);
     if (email === key && password === value) {
       return true;
     }
   }
+
+  $('.ui.form').form('set values', {
+    email: '',
+    password: '',
+  });
 
   return false;
 }
@@ -24,10 +28,10 @@ $('.ui.form').form({
     email: {
       identifier: 'email',
       rules: [
-        {
-          type: 'email',
-          prompt: 'Please enter a valid email',
-        },
+        //{
+          //type: 'email',
+          //prompt: 'Please enter a valid email',
+        //},
         {
           type: 'isUserValid',
           prompt: 'Invalid email or password'
@@ -37,10 +41,14 @@ $('.ui.form').form({
     password: {
       identifier: 'password',
       rules: [
-        {
-          type: 'empty',
-          prompt: 'Please enter a password',
-        },
+        //{
+          //type: 'empty',
+          //prompt: 'Please enter a password',
+        //},
+        //{
+          //type: 'isUserValid',
+          //prompt: 'Invalid email or password'
+        //}
       ],
     },
   },
