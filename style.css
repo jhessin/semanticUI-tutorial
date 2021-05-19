@@ -1,0 +1,10 @@
+.grid {
+  height: 100%;
+}
+
+.column {
+  max-width: 450px;
+  padding: 20px;
+  border: 1.5px solid #0E6EB8;
+  border-radius: 5px;
+}

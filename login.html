@@ -1,0 +1,81 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+      integrity="sha256-UXesixbeLkB/UYxVTzuj/gg3+LMzgwAmg3zD+C4ZASQ="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/typescript@4.2.4/lib/typescript.js"
+      integrity="sha256-7V+NHJPWJcmhotKCpuDTiZrKKsWOUIgoQCoCA9M1k1s="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"
+      integrity="sha256-CgSoWC9w5wNmI1aN8dIMK+6DPelUEtvDr+Bc2m/0Nx8="
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="content" class="ui middle aligned center aligned grid">
+      <div class="column">
+        <h1 class="ui header">Login to your account</h1>
+        <form class="ui large form">
+          <div class="field">
+            <div class="ui left icon input">
+              <input type="email" name="email" placeholder="Email" />
+              <i class="user icon"></i>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <input type="password" name="password" placeholder="Password" />
+              <i class="key icon"></i>
+            </div>
+          </div>
+          <button class="ui fluid blue button">Login</button>
+          <button class="ui fluid basic button">Forgot password?</button>
+          <div class="ui error message"></div>
+        </form>
+      </div>
+    </div>
+    <script>
+      $('.ui.form').form({
+        fields: {
+          email: {
+            identifier: 'email',
+            rules: [
+              {
+                type: 'email',
+                prompt: 'Please enter a valid email',
+              },
+            ],
+          },
+          password: {
+            identifier: 'password',
+            rules: [
+              {
+                type: 'empty',
+                prompt: 'Please enter a password',
+              },
+            ],
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
